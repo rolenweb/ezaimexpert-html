@@ -1,0 +1,96 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container-fluid {
+  position: relative;
+  max-width: 1200px;
+}
+header div.top-header {
+  background-color: #f2f2f5;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+header div.top-header div[name="title"] {
+  font-size: 14px;
+  line-height: 21px;
+  color: #666;
+}
+header div.med-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media (max-width: 991px) {
+  header div.med-header {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+header div.med-header button[name="btn-menu-xs"] {
+  border: none;
+}
+header div.med-header button[name="btn-menu-xs"]:hover {
+  background-color: transparent;
+}
+header div.med-header div[name="logo"] {
+  font-size: 36px;
+}
+@media (max-width: 767px) {
+  header div.med-header div[name="logo"] {
+    font-size: 30px;
+  }
+}
+header div.med-header div[name="logo"] a {
+  text-decoration: none;
+}
+header div.med-header div[name="logo"] a span[name="clip"] {
+  color: #229dd1;
+  line-height: 1;
+  font-weight: 100;
+}
+header div.med-header div[name="logo"] a span[name="first-word"] {
+  color: #323946;
+  font-weight: 900;
+}
+header div.med-header div[name="logo"] a span[name="second-word"] {
+  color: #000;
+  font-weight: 100;
+  margin-left: -0.32em;
+}
+header div.med-header div[name="info"] {
+  font-size: 14px;
+  line-height: 21px;
+}
+header div.med-header div[name="info"] div[name="icon"] {
+  color: #229dd1;
+  padding-left: 0px;
+}
+header div.med-header div[name="info"] div[name="text"] {
+  color: #000;
+  font-weight: 700;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+header div.menu-header {
+  background-color: #323946;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+header div.menu-header ul li {
+  margin-right: 25px;
+}
+header div.menu-header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 900;
+}
+header div.menu-header ul li a:hover {
+  color: #229dd1;
+}
