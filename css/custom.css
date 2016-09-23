@@ -71,6 +71,11 @@ header div.med-header {
   padding-bottom: 25px;
 }
 @media (max-width: 991px) {
+  header div.med-header div.row-header {
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+@media (max-width: 991px) {
   header div.med-header {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -81,6 +86,7 @@ header div.med-header div.btn-menu-xs {
   cursor: pointer;
 }
 header div.med-header div.btn-menu-xs div.block-menu-xs {
+  z-index: 1000;
   position: absolute;
   display: none;
   background-color: #323946;
@@ -156,6 +162,42 @@ header div.med-header div[name="info"] div[name="text"] {
   font-weight: 700;
   padding-right: 0px;
   padding-left: 0px;
+}
+header div.med-header div.btn-social-xs {
+  cursor: pointer;
+}
+header div.med-header div.block-social-xs {
+  position: absolute;
+  display: none;
+  width: 200%;
+  top: 60px;
+  right: 30px;
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (max-width: 767px) {
+  header div.med-header div.block-social-xs {
+    width: 550%;
+  }
+}
+@media (max-width: 767px) {
+  header div.med-header div.block-social-xs {
+    right: 15px;
+  }
+}
+@media (max-width: 767px) {
+  header div.med-header div.block-social-xs div.step {
+    margin-top: 10px;
+    border-bottom: 1px solid #e8e8e8;
+  }
+}
+header div.med-header div.block-social-xs div[name="icon"] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+header div.med-header div.block-social-xs div[name="text"] {
+  padding: 0px 10px;
 }
 header div.menu-header {
   background-color: #323946;
