@@ -36,7 +36,23 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-10 col-sm-6 col-md-4" name = "logo">
-              <button class="btn btn-default visible-xs-inline visible-sm-inline" name = "btn-menu-xs"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+              <div class="visible-xs-inline visible-sm-inline btn-menu-xs">
+                <i class="fa fa-bars i-menu-xs" aria-hidden="true"></i>
+                <div class="block-menu-xs">
+                  <ul class="list-unstyled menu-xs">
+                    <li><a href="">Главная</a></li>
+                    <li>
+                      <a class="sub-menu-xs"><span class="item">Займы</span><span class="icon-item"><i class="fa fa-angle-right" aria-hidden="true"></i></span></a>
+                      <ul class="list-unstyled sub-menu-xs">
+                        <li><a href="">Займы на карту</a></li>
+                        <li><a href="">Займы онлайн на банковский счет</a></li>
+                        <li><a href="">Займы через систему контакт</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="">Калькулятор</a></li>
+                  </ul>
+                </div>
+              </div>
               <a href="">
                 <span name = "clip">[</span>
                 <span name = "first-word">eZaim</span>
@@ -79,7 +95,9 @@
                   </div>
                 </div>
                 <div class="col-xs-12 visible-sm-inline visible-xs-inline text-right">
-                  <button class="btn btn-default" name = "btn-menu-xs"><i class="fa fa-plus-square-o fa-3x" aria-hidden="true"></i></button>
+                  <div class="btn-social-xs">
+                    <i class="fa fa-plus-square-o fa-3x" aria-hidden="true"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -89,30 +107,59 @@
       </div>
       <div class="menu-header hidden-xs hidden-sm">
         <div class="container-fluid">
-          <ul class="list-inline">
-            <li>
-              <a href="">
-                Главная
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Займы
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Калькулятор
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Контакты
-              </a>
-            </li>
-          </ul>
+          <div class="row">
+            <div class="col-md-6">
+              <ul class="list-inline">
+                <li class="menu-li">
+                  <a href="">
+                    Главная
+                  </a>
+                </li>
+                <li class="menu-li">
+                  
+                    <a href="">
+                      Займы
+                      <div class="list-group" name = "sum-menu-desktop">
+                        <a href="" class="list-group-item">Займы на карту</a>
+                        <a href="" class="list-group-item">Займы онлайн на банковский счет</a>
+                        <a href="" class="list-group-item">Займы через систему контакт</a>
+                      </div>
+                    </a>  
+                  
+                  
+                </li>
+                <li class="menu-li">
+                  <a href="">
+                    Калькулятор
+                  </a>
+                </li>
+                <li class="menu-li">
+                  <a href="">
+                    Контакты
+                  </a>
+                </li>
+                
+              </ul>
+            </div>
+            <div class="col-md-6 text-right">
+              <form>
+                <div class="block-search">
+                  <div class="btn-search">
+                    <input type="text" name="serach">
+                    <i class="fa fa-search fa-2x" aria-hidden="true">
+                  </i>
+                  
+                </div>
+                
+                </ul>  
+              </form>
+              
+            </div>
+          </div>
+          
         </div>
       </div>
+
     </header>
     <section name = "slider"></section>
     <section name = "icons"></section>
@@ -125,5 +172,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/es5-shims.min.js"></script>
     <script src="js/share.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>

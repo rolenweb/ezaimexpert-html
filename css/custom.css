@@ -1,3 +1,46 @@
+@-webkit-keyframes show_sub_menu {
+  from {
+    opacity: 0;
+    -ms-transform: scale(1, 0);
+    -webkit-transform: scale(1, 0);
+    -moz-transform: scale(1, 0);
+    -o-transform: scale(1, 0);
+    transform: scale(1, 0);
+  }
+  to {
+    opacity: 1;
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes show_search_input {
+  from {
+    opacity: 0;
+    -ms-transform: scale(0, 1);
+    -webkit-transform: scale(0, 1);
+    -moz-transform: scale(0, 1);
+    -o-transform: scale(0, 1);
+    transform: scale(0, 1);
+  }
+  to {
+    opacity: 1;
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+.rotate180 {
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
@@ -33,10 +76,46 @@ header div.med-header {
     padding-bottom: 5px;
   }
 }
-header div.med-header button[name="btn-menu-xs"] {
+header div.med-header div.btn-menu-xs {
   border: none;
+  cursor: pointer;
 }
-header div.med-header button[name="btn-menu-xs"]:hover {
+header div.med-header div.btn-menu-xs div.block-menu-xs {
+  position: absolute;
+  display: none;
+  background-color: #323946;
+  border: 1px solid #323946;
+  top: 60px;
+}
+header div.med-header div.btn-menu-xs div.block-menu-xs ul.menu-xs {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+header div.med-header div.btn-menu-xs div.block-menu-xs ul.menu-xs li {
+  padding: 5px 0px;
+}
+header div.med-header div.btn-menu-xs div.block-menu-xs ul.menu-xs li a {
+  color: #fff;
+}
+header div.med-header div.btn-menu-xs div.block-menu-xs ul.menu-xs li a:hover {
+  color: #229dd1;
+}
+header div.med-header div.btn-menu-xs div.block-menu-xs ul.menu-xs li a.sub-menu-xs {
+  width: 100%;
+}
+header div.med-header div.btn-menu-xs div.block-menu-xs ul.menu-xs li a.sub-menu-xs span.icon-item {
+  margin-left: 20px;
+  vertical-align: -1px;
+}
+header div.med-header div.btn-menu-xs div.block-menu-xs ul.menu-xs li ul.sub-menu-xs {
+  display: none;
+  padding-left: 10px;
+}
+header div.med-header div.btn-menu-xs:hover {
   background-color: transparent;
 }
 header div.med-header div[name="logo"] {
@@ -80,17 +159,151 @@ header div.med-header div[name="info"] div[name="text"] {
 }
 header div.menu-header {
   background-color: #323946;
-  padding-top: 20px;
-  padding-bottom: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+header div.menu-header ul {
+  margin-bottom: 0px;
 }
 header div.menu-header ul li {
+  padding-top: 8px;
+  padding-bottom: 8px;
   margin-right: 25px;
 }
 header div.menu-header ul li a {
   color: #fff;
   text-decoration: none;
   font-weight: 900;
+  font-size: 16px;
 }
 header div.menu-header ul li a:hover {
   color: #229dd1;
+}
+header div.menu-header ul li:hover {
+  color: #229dd1;
+}
+header div.menu-header ul li:hover div[name="sum-menu-desktop"] {
+  -webkit-animation: show_sub_menu 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -o-animation: show_sub_menu 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -ms-animation: show_sub_menu 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -moz-animation: show_sub_menu 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  animation: show_sub_menu 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  opacity: 1;
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+header div.menu-header ul li div[name="sum-menu-desktop"] {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  top: 55px;
+  opacity: 0;
+  -ms-transform: scale(1, 0);
+  -webkit-transform: scale(1, 0);
+  -moz-transform: scale(1, 0);
+  -o-transform: scale(1, 0);
+  transform: scale(1, 0);
+  -webkit-transform-origin: center top;
+  -ms-transform-origin: center top;
+  -moz-transform-origin: center top;
+  -o-transform-origin: center top;
+  transform-origin: center top;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header div.menu-header ul li div[name="sum-menu-desktop"]:hover {
+  -webkit-animation: show_sub_menu 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -o-animation: show_sub_menu 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -ms-animation: show_sub_menu 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -moz-animation: show_sub_menu 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  animation: show_sub_menu 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  opacity: 1;
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+header div.menu-header ul li div[name="sum-menu-desktop"] a {
+  color: #000;
+  font-weight: 300;
+}
+header div.menu-header ul li div[name="sum-menu-desktop"] a:hover {
+  color: #229dd1;
+  font-weight: 500;
+}
+header div.menu-header ul li.menu-li {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+header div.menu-header div.block-search {
+  padding: 10px 0px;
+  width: 100%;
+}
+header div.menu-header div.block-search input {
+  position: absolute;
+  font-size: 18px;
+  right: 80px;
+  border-radius: 5px;
+  border-color: #323946;
+  color: #323946;
+  padding-left: 10px;
+}
+header div.menu-header div.block-search div.btn-search {
+  padding: 0px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #323946;
+  border-color: #323946;
+  cursor: pointer;
+}
+header div.menu-header div.block-search div.btn-search:hover input {
+  -webkit-animation: show_search_input 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -o-animation: show_search_input 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -ms-animation: show_search_input 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -moz-animation: show_search_input 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  animation: show_search_input 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  opacity: 1;
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+header div.menu-header div.block-search div.btn-search input {
+  opacity: 0;
+  -ms-transform: scale(0, 1);
+  -webkit-transform: scale(0, 1);
+  -moz-transform: scale(0, 1);
+  -o-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transform-origin: right top;
+  -ms-transform-origin: right top;
+  -moz-transform-origin: right top;
+  -o-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header div.menu-header div.block-search div.btn-search input:hover {
+  -webkit-animation: show_search_input 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -o-animation: show_search_input 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -ms-animation: show_search_input 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  -moz-animation: show_search_input 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  animation: show_search_input 0.3s cubic-bezier(0.4, 0, 1, 1) 0s;
+  opacity: 1;
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transform: scale(1, 1);
 }
