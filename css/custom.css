@@ -442,3 +442,46 @@ section[name="what-we-do"] div.what-we-do div.bl2 {
 section[name="partners"] {
   padding: 15px 0px;
 }
+footer div.top-footer {
+  background-color: #323946;
+}
+footer div.top-footer div.row-top-footer {
+  padding: 20px 0px;
+}
+footer div.top-footer div.row-top-footer div.col-top-footer div.title {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 1px solid #616873;
+}
+footer div.top-footer div.row-top-footer div.col-top-footer div.label {
+  display: block;
+  padding-left: 0px;
+  padding-top: 15px;
+  text-align: left;
+}
+footer div.top-footer div.row-top-footer div.col-top-footer div.content input {
+  height: 30px;
+}
+footer div.top-footer div.row-top-footer div.col-top-footer div.content ul {
+  padding: 15px 0px;
+}
+footer div.top-footer div.row-top-footer div.col-top-footer div.content ul li div.unit-left {
+  display: inline-block;
+  color: #229dd1;
+}
+footer div.top-footer div.row-top-footer div.col-top-footer div.content ul li div.unit-body {
+  margin-left: 15px;
+  display: inline-block;
+  color: #fff;
+}
+footer div.top-footer div.row-top-footer div.col-top-footer div.content ul li div.unit-body a {
+  color: #fff;
+}
+footer div.bottom-footer {
+  background-color: #282e3a;
+}
+footer div.bottom-footer div.copyright {
+  padding: 15px 0px;
+  color: #fff;
+}

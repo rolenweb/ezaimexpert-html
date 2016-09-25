@@ -5,6 +5,8 @@
 @color-text-dark: #000;
 @color-text-white: #fff;
 @color-border: #e8e8e8;
+@color-border2: #616873;
+@color-footer-bottom: #282e3a;
 
 @-webkit-keyframes show_sub_menu {
 	from {
@@ -479,6 +481,57 @@ section[name = "partners"]{
 			img{
 
 			}
+		}
+	}
+}
+footer{
+	div.top-footer{
+		background-color: @color-text-dark-blue;
+		div.row-top-footer{
+			padding: 20px 0px;
+			div.col-top-footer{
+				div.title{
+					color: @color-text-white;
+					font-size: 22px;
+					font-weight: bold;
+					border-bottom: 1px solid @color-border2;
+				}
+				div.label{
+					display: block;
+					padding-left: 0px;
+					padding-top: 15px;
+					text-align: left;
+				}
+				div.content{
+					input{
+						height: 30px;
+					}
+					ul{
+						padding: 15px 0px;
+						li{
+							div.unit-left{
+								display: inline-block;
+								color: @color-text-blue;
+							}
+							div.unit-body{
+								margin-left: 15px;
+								display: inline-block;
+								a{
+									color:@color-text-white;
+								}
+								color:@color-text-white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	div.bottom-footer{
+		background-color: @color-footer-bottom;
+		div.copyright{
+			padding: 15px 0px;
+			color: @color-text-white;
 		}
 	}
 }
