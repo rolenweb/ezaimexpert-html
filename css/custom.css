@@ -199,6 +199,15 @@ header div.med-header div.block-social-xs div[name="icon"] {
 header div.med-header div.block-social-xs div[name="text"] {
   padding: 0px 10px;
 }
+header div.med-header div.block-social-xs div.block-share {
+  margin-top: 20px;
+}
+header div.med-header div.block-social-xs div.block-share div[name="social"] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid #e8e8e8;
+  border-bottom: 2px solid #e8e8e8;
+}
 header div.menu-header {
   background-color: #323946;
   padding-top: 0px;
@@ -238,6 +247,7 @@ header div.menu-header ul li:hover div[name="sum-menu-desktop"] {
   transform: scale(1, 1);
 }
 header div.menu-header ul li div[name="sum-menu-desktop"] {
+  z-index: 1000;
   position: absolute;
   width: 300px;
   height: auto;

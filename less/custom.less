@@ -279,6 +279,15 @@ header{
 				//font-size: 20px;
 				
 			}
+			div.block-share{
+				margin-top: 20px;
+				div[name = "social"]{
+					padding-top: 10px;
+					padding-bottom: 10px;
+					border-top: 2px solid @color-border;
+					border-bottom: 2px solid @color-border;
+				}
+			}
 		}
 	}
 	div.menu-header{
@@ -312,6 +321,7 @@ header{
 				}
 				
 				div[name = "sum-menu-desktop"]{
+					z-index: 1000;
 					position: absolute;
 					width: 300px;
 					height: auto;
