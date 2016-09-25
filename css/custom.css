@@ -370,6 +370,7 @@ header div.menu-header div.block-search div.btn-search input:hover {
 }
 section[name="icons"] {
   margin-top: 20px;
+  padding-bottom: 20px;
 }
 section[name="icons"] div.item {
   margin-top: 10px;
@@ -380,7 +381,7 @@ section[name="icons"] div.item {
 }
 @media (max-width: 767px) {
   section[name="icons"] div.item {
-    height: 200px;
+    height: 220px;
   }
 }
 section[name="icons"] div.item:hover {
@@ -401,4 +402,43 @@ section[name="icons"] div.item div.title {
 section[name="icons"] div.item div.description {
   margin-top: 10px;
   font-size: 14px;
+}
+section[name="what-we-do"] {
+  height: 200px;
+  background-image: url('../images/what-we-do-bg.jpg');
+}
+section[name="what-we-do"] div.what-we-do {
+  padding-top: 80px;
+}
+@media (max-width: 767px) {
+  section[name="what-we-do"] div.what-we-do {
+    padding-top: 5px;
+  }
+}
+section[name="what-we-do"] div.what-we-do div.bl1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #323946;
+  border-right: 1px solid #323946;
+}
+@media (max-width: 767px) {
+  section[name="what-we-do"] div.what-we-do div.bl1 {
+    border-right: 0px solid #323946;
+    border-bottom: 1px solid #323946;
+    text-align: center;
+  }
+}
+section[name="what-we-do"] div.what-we-do div.bl2 {
+  font-size: 22px;
+  color: #323946;
+}
+@media (max-width: 767px) {
+  section[name="what-we-do"] div.what-we-do div.bl2 {
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 20px;
+  }
+}
+section[name="partners"] {
+  padding: 15px 0px;
 }

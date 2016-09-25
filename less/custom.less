@@ -409,12 +409,13 @@ header{
 }
 section[name = "icons"]{
 	margin-top: 20px;	
+	padding-bottom: 20px;
 	div.item{
 		margin-top: 10px;
 		padding: 10px;
 		height: 300px;
 		@media (max-width: 767px){
-			height: 200px;
+			height: 220px;
 		}
 		border: 1px solid @color-text-white;
 		transition: 1s;
@@ -437,6 +438,47 @@ section[name = "icons"]{
 		div.description{
 			margin-top: 10px;
 			font-size: 14px;
+		}
+	}
+}
+section[name = "what-we-do"]{
+	height: 200px;
+	background-image: url('../images/what-we-do-bg.jpg');
+	div.what-we-do{
+		padding-top: 80px;
+		@media (max-width: 767px){
+			padding-top: 5px;
+		}
+		div.bl1{
+			font-size: 30px;
+			font-weight: bold;
+			color: @color-text-dark-blue;
+			border-right: 1px solid @color-text-dark-blue;
+			@media (max-width: 767px){
+				border-right: 0px solid @color-text-dark-blue;
+				border-bottom: 1px solid @color-text-dark-blue;
+				text-align: center;
+				
+			}
+		}
+		div.bl2{
+			font-size: 22px;
+			color: @color-text-dark-blue;
+			@media (max-width: 767px){
+				text-align: center;
+				padding: 5px 0px;
+				font-size: 20px;
+			}
+		}
+	}
+}
+section[name = "partners"]{
+	padding: 15px 0px;
+	div.partners{
+		@media (max-width: 767px){
+			img{
+
+			}
 		}
 	}
 }
