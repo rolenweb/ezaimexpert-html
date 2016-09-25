@@ -374,9 +374,14 @@ section[name="icons"] {
 section[name="icons"] div.item {
   margin-top: 10px;
   padding: 10px;
-  height: 250px;
+  height: 300px;
   border: 1px solid #fff;
   transition: 1s;
+}
+@media (max-width: 767px) {
+  section[name="icons"] div.item {
+    height: 200px;
+  }
 }
 section[name="icons"] div.item:hover {
   border: 1px solid #e8e8e8;
