@@ -170,7 +170,11 @@ header{
 				display: none;
 				background-color: @color-text-dark-blue;
 				border: 1px solid @color-text-dark-blue;
-				top: 60px;
+				top: 57px;
+				left: 0px;
+				@media (max-width: 767px){
+					top: 50px;
+				}
 				ul.menu-xs{
 					padding-top: 10px;
 					padding-right: 30px;
@@ -248,16 +252,19 @@ header{
 			cursor: pointer;
 		}
 		div.block-social-xs{
+			z-index: 1000;
+			background-color: @color-text-white;
 			position: absolute;
 			display: none;
 			width: 200%;
 			@media (max-width: 767px){
-				width: 550%;
+				width: 650%;
 			}
 			top: 60px;
-			right: 30px;
+			right: 0px;
 			@media (max-width: 767px){
-				right: 15px;
+				right: 0px;
+				top: 50px;
 			}
 			padding-top: 20px;
 			padding-left: 15px;

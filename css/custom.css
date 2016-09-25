@@ -91,7 +91,13 @@ header div.med-header div.btn-menu-xs div.block-menu-xs {
   display: none;
   background-color: #323946;
   border: 1px solid #323946;
-  top: 60px;
+  top: 57px;
+  left: 0px;
+}
+@media (max-width: 767px) {
+  header div.med-header div.btn-menu-xs div.block-menu-xs {
+    top: 50px;
+  }
 }
 header div.med-header div.btn-menu-xs div.block-menu-xs ul.menu-xs {
   padding-top: 10px;
@@ -167,23 +173,26 @@ header div.med-header div.btn-social-xs {
   cursor: pointer;
 }
 header div.med-header div.block-social-xs {
+  z-index: 1000;
+  background-color: #fff;
   position: absolute;
   display: none;
   width: 200%;
   top: 60px;
-  right: 30px;
+  right: 0px;
   padding-top: 20px;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (max-width: 767px) {
   header div.med-header div.block-social-xs {
-    width: 550%;
+    width: 650%;
   }
 }
 @media (max-width: 767px) {
   header div.med-header div.block-social-xs {
-    right: 15px;
+    right: 0px;
+    top: 50px;
   }
 }
 @media (max-width: 767px) {
