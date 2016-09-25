@@ -78,7 +78,7 @@ header div.med-header {
 @media (max-width: 991px) {
   header div.med-header {
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
   }
 }
 header div.med-header div.btn-menu-xs {
