@@ -374,7 +374,7 @@ section[name="icons"] {
 section[name="icons"] div.item {
   margin-top: 10px;
   padding: 10px;
-  height: 300px;
+  height: 250px;
   border: 1px solid #fff;
   transition: 1s;
 }
